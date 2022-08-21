@@ -37,11 +37,9 @@ public class RouteCalculator
     {
         double duration = 0;
         Station previousStation = null;
-        for(int i = 0; i < route.size(); i++)
-        {
+        for(int i = 0; i < route.size(); i++) {
             Station station = route.get(i);
-            if(i > 0)
-            {
+            if(i > 0) {
                 duration += previousStation.getLine().equals(station.getLine()) ?
                     interStationDuration : interConnectionDuration;
             }
@@ -49,8 +47,6 @@ public class RouteCalculator
         }
         return duration;
     }
-
-    //=========================================================================
 
     private List<Station> getRouteOnTheLine(Station from, Station to)
     {
@@ -62,8 +58,7 @@ public class RouteCalculator
         int direction = 0;
         for(Station station : stations)
         {
-            if(direction == 0)
-            {
+            if(direction == 0) {
                 if(station.equals(from)) {
                     direction = 1;
                 } else if(station.equals(to)) {
