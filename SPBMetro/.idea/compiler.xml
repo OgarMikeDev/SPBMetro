@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="spb-metro" target="1.8" />
+      <module name="spb-metro" target="9" />
     </bytecodeTargetLevel>
   </component>
 </project>
