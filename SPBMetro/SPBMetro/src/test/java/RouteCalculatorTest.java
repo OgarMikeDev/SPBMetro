@@ -61,8 +61,6 @@ public class RouteCalculatorTest extends TestCase {
 
         List<Station> actual = List.of(
                 stationIndex.getStation("station_1.1"),
-                stationIndex.getStation("station_1.2"),
-                stationIndex.getStation("station_2.1"),
                 stationIndex.getStation("station_2.2")
         );
 
