@@ -10,6 +10,8 @@ public class RouteCalculatorTest extends TestCase {
     List<Station> routeForDuration;
     StationIndex stationIndex = new StationIndex();
     RouteCalculator calculator = new RouteCalculator(stationIndex);
+
+    Station station;
     @Override
     protected void setUp() throws Exception {
 
@@ -17,6 +19,10 @@ public class RouteCalculatorTest extends TestCase {
 
         Line line1 = new Line(1, "OneLine");
         Line line2 = new Line(2, "TwoLine");
+
+        station = new Station("milk" , line1);
+
+        routeForDuration.add(station);
 
         routeForDuration.add(new Station("Петровская", line1));
         routeForDuration.add(new Station("Арбузная", line1));

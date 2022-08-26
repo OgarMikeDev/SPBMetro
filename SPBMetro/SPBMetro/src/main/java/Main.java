@@ -2,6 +2,8 @@ import core.Line;
 
 import core.Station;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.json.simple.JSONArray;
 
 import org.json.simple.JSONObject;
@@ -21,6 +23,7 @@ import java.util.Scanner;
 public class Main
 
 {
+    private static Logger logger;
 
     private static String dataFile = "SPBMetro/src/main/resources/map.json";
 
@@ -33,6 +36,8 @@ public class Main
     {
 
         RouteCalculator calculator = getRouteCalculator();
+
+        logger = LogManager.getRootLogger();
 
         System.out.println("Программа расчёта маршрутов метрополитена Санкт-Петербурга\n");
 
@@ -60,9 +65,7 @@ public class Main
 
     }
 
-    private static RouteCalculator getRouteCalculator()
-
-    {
+    private static RouteCalculator getRouteCalculator() {
 
         createStationIndex();
 
@@ -127,6 +130,8 @@ public class Main
                 return station;
 
             }
+
+            logger.info("Станция не найдена: " + line);
 
             System.out.println("Станция не найдена :(");
 
