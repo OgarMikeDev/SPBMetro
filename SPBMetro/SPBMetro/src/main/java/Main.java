@@ -1,5 +1,4 @@
 import core.Line;
-//
 
 import core.Station;
 
@@ -26,7 +25,7 @@ public class Main
 {
     private static Logger logger;
 
-    private static String dataFile = "SPBMetro/src/main/resources/map.json";
+    private static String dataFile = "src\\main\\resources\\map.json";
 
     private static Scanner scanner;
 

@@ -32,15 +32,14 @@ public class RouteCalculator
         return route;
     }
 
-    public static double calculateDuration(List<Station> route)
-    {
+    public static double calculateDuration(List<Station> route) {
         double duration = 0;
         Station previousStation = null;
         for(int i = 0; i < route.size(); i++) {
             Station station = route.get(i);
             if(i > 0) {
                 duration += previousStation.getLine().equals(station.getLine()) ?
-                    interStationDuration : interConnectionDuration;
+                        interStationDuration : interConnectionDuration;
             }
             previousStation = station;
         }
@@ -70,7 +69,7 @@ public class RouteCalculator
             }
 
             if((direction == 1 && station.equals(to)) ||
-                (direction == -1 && station.equals(from))) {
+                    (direction == -1 && station.equals(from))) {
                 break;
             }
         }
@@ -147,7 +146,7 @@ public class RouteCalculator
             for (Station dstStation : toLineStations)
             {
                 List<Station> connectedLineRoute =
-                    getRouteViaConnectedLine(srcStation, dstStation);
+                        getRouteViaConnectedLine(srcStation, dstStation);
                 if(connectedLineRoute == null) {
                     continue;
                 }

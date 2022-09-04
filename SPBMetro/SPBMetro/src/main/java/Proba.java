@@ -1,3 +1,5 @@
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import core.Line;
 import core.Station;
@@ -8,35 +10,101 @@ import java.util.stream.Stream;
 
 public class Proba {
 
-    static ArrayList<Station> routeForDuration;
-    static Station station;
+    private static String dataFile = "SPBMetro/src/main/resources/map.json";
+
+    private static String getJsonFile() {
+
+        StringBuilder builder = new StringBuilder();
+
+        try {
+
+            List<String> lines = Files.readAllLines(Paths.get(dataFile));
+
+            lines.forEach(line -> builder.append(line));
+
+        }
+
+        catch (Exception ex) {
+
+            ex.printStackTrace();
+
+        }
+
+        return builder.toString();
+
+    }
+
+//    static ArrayList<Station> routeForDuration;
+    static Station station_1__1;
+
+    static Station station_1__2;
+
+    static Station station_1__3;
+
+
     static Station station_2;
     static Station station_3;
     public static void main(String[] args) {
 
-        routeForDuration = new ArrayList<>();
+//        routeForDuration = new ArrayList<>();
 
-        Line line1 = new Line(1, "OneLine");
-        Line line2 = new Line(2, "TwoLine");
+        Line line1 = new Line(1, "Кировско-Выборгская линия");
+        Line line2 = new Line(2, "Московско-Петроградская линия");
 
-        station = new Station("milk" , line1);
+        station_1__1 = new Station("Девяткино" , line1);
 
-        station_2 = new Station("eba", line1);
+        station_1__2 = new Station("Гражданский проспект" , line1);
 
-        station_3 = new Station("zaeba", line2);
+        station_1__3 = new Station("Академическая" , line1);
 
-        routeForDuration.add(station);
-        routeForDuration.add(station_2);
-        routeForDuration.add(station_3);
 
-        for (Station route : routeForDuration) {
-            System.out.println(route.getLine());
-        }
+        station_2 = new Station("Выборгская", line1);
+
+        station_3 = new Station("Парнас", line2);
+
+        ArrayList arrayListRoute = new ArrayList<>();
+        arrayListRoute.add(station_1__1);
+        arrayListRoute.add(station_1__2);
+        arrayListRoute.add(station_1__3);
+//
+//        routeForDuration.add(station);
+//        routeForDuration.add(station_2);
+//        routeForDuration.add(station_3);
+//
+//        for (Station route : routeForDuration) {
+//            System.out.println(route);
+//        }
+
+
+        //Создание объекта класса RouteCalculator()
+        StationIndex stationIndex = new StationIndex();
+        RouteCalculator routeCalculator = new RouteCalculator(stationIndex);
+
+        //Использование методов класса RouteCalculator()
+        routeCalculator.getShortestRoute(station_1__1, station_1__3);
+
+        //Вывод продолжительности маршрута
+        System.out.println(calculateDuration(arrayListRoute));
 
 //        System.out.println(routeForDuration);
 
 //        Proba proba = new Proba();
 //        proba.probaGetRouteOnTheLine();
+    }
+
+    //Расчёт продолжительности маршрута
+    public static double calculateDuration(List<Station> route) {
+        double duration = 0;
+        Station previousStation = null;
+        for(int i = 0; i < route.size(); i++) {
+            Station station = route.get(i);
+            if(i > 0) {
+                duration += previousStation.getLine().equals(station.getLine()) ?
+                        2.5 : 3.5;
+            }
+            previousStation = station;
+        }
+        return duration;
     }
 
 
