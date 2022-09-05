@@ -48,6 +48,8 @@ public class Proba {
     static Station station_3__1;
     static Station station_3__2;
     static Station station_3__3;
+
+    static ArrayList arrayListRoute = new ArrayList<>();
     public static void main(String[] args) {
 
 //        routeForDuration = new ArrayList<>();
@@ -69,28 +71,34 @@ public class Proba {
         station_3__2 = new Station("Гостиный двор", line3);
         station_3__3 = new Station("Маяковская", line3);
 
-        ArrayList arrayListRoute = new ArrayList<>();
 //        arrayListRoute.add(station_1__1);
 //        arrayListRoute.add(station_1__2);
-        arrayListRoute.add(station_1__3);
+//        arrayListRoute.add(station_1__3);
 //        arrayListRoute.add(station_2__1);
 //        arrayListRoute.add(station_2__2);
 //        arrayListRoute.add(station_2__3);
 //        arrayListRoute.add(station_3__1);
-        arrayListRoute.add(station_3__2);
+//        arrayListRoute.add(station_3__2);
+//        arrayListRoute.add(station_3__3);
+        //__//
+        arrayListRoute.add(station_1__3);
         arrayListRoute.add(station_3__3);
+        arrayListRoute.add(station_3__2);
+        arrayListRoute.add(station_2__3);
+
+
 //
 //        for (Station route : routeForDuration) {
 //            System.out.println(route);
 //        }
 
 
-        //Создание объекта класса RouteCalculator()
-        StationIndex stationIndex = new StationIndex();
-        RouteCalculator routeCalculator = new RouteCalculator(stationIndex);
-
-        //Использование методов класса RouteCalculator()
-        routeCalculator.getShortestRoute(station_1__1, station_1__3);
+//        //Создание объекта класса RouteCalculator()
+//        StationIndex stationIndex = new StationIndex();
+//        RouteCalculator routeCalculator = new RouteCalculator(stationIndex);
+//
+//        //Использование методов класса RouteCalculator()
+//        routeCalculator.getShortestRoute(station_1__1, station_1__3);
 
         //Вывод продолжительности маршрута
 
@@ -101,19 +109,37 @@ public class Proba {
 //        proba.probaGetRouteOnTheLine();
     }
 
+
     //Расчёт продолжительности маршрута
-    public static double calculateDuration(List<Station> route) {
-        double duration = 0;
+    public static double calculateDuration(ArrayList route) {
+        int durationInt = 0;
         Station previousStation = null;
-        for(int i = 0; i < route.size(); i++) {
-            Station station = route.get(i);
-            if(i > 0) {
-                duration += previousStation.getLine().equals(station.getLine()) ?
-                        2 : 3;
+        Station presentStation;
+        for (int i = 0; i <= route.size(); i++) {
+            presentStation = route.get(i);
+            int numberPreviousStation = previousStation.getLine().getNumber();
+            int numberPresentStation = presentStation.getLine().getNumber();
+
+            if (numberPreviousStation == numberPresentStation) {
+                durationInt += 2;
+            } else {
+                durationInt += 3;
             }
-            previousStation = station;
+
         }
-        return duration;
+        return durationInt;
+
+//        double duration = 0.0;
+//        Station previousStation = null;
+//        for(int i = 0; i < route.size(); i++) {
+//            Station station = route.get(i);
+//            if(i > 0) {
+//                duration += previousStation.getLine().equals(station.getLine()) ?
+//                        2 : 3;
+//            }
+//            previousStation = station;
+//        }
+//        return duration;
     }
 
 
