@@ -36,40 +36,49 @@ public class Proba {
 
 //    static ArrayList<Station> routeForDuration;
     static Station station_1__1;
-
     static Station station_1__2;
-
     static Station station_1__3;
 
 
-    static Station station_2;
-    static Station station_3;
+    static Station station_2__1;
+    static Station station_2__2;
+    static Station station_2__3;
+
+
+    static Station station_3__1;
+    static Station station_3__2;
+    static Station station_3__3;
     public static void main(String[] args) {
 
 //        routeForDuration = new ArrayList<>();
 
         Line line1 = new Line(1, "Кировско-Выборгская линия");
         Line line2 = new Line(2, "Московско-Петроградская линия");
+        Line line3 = new Line(2, "Невско-Василеостровская линия");
 
-        station_1__1 = new Station("Девяткино" , line1);
-
-        station_1__2 = new Station("Гражданский проспект" , line1);
-
-        station_1__3 = new Station("Академическая" , line1);
+        station_1__1 = new Station("Площадь Ленина" , line1);
+        station_1__2 = new Station("Чернышевская" , line1);
+        station_1__3 = new Station("Площадь Восстания" , line1);
 
 
-        station_2 = new Station("Выборгская", line1);
+        station_2__1 = new Station("Петроградская", line2);
+        station_2__2 = new Station("Горьковская", line2);
+        station_2__3 = new Station("Невский проспект", line2);
 
-        station_3 = new Station("Парнас", line2);
+        station_3__1 = new Station("Василеостровская", line3);
+        station_3__2 = new Station("Гостиный двор", line3);
+        station_3__3 = new Station("Маяковская", line3);
 
         ArrayList arrayListRoute = new ArrayList<>();
-        arrayListRoute.add(station_1__1);
-        arrayListRoute.add(station_1__2);
+//        arrayListRoute.add(station_1__1);
+//        arrayListRoute.add(station_1__2);
         arrayListRoute.add(station_1__3);
-//
-//        routeForDuration.add(station);
-//        routeForDuration.add(station_2);
-//        routeForDuration.add(station_3);
+//        arrayListRoute.add(station_2__1);
+//        arrayListRoute.add(station_2__2);
+//        arrayListRoute.add(station_2__3);
+//        arrayListRoute.add(station_3__1);
+        arrayListRoute.add(station_3__2);
+        arrayListRoute.add(station_3__3);
 //
 //        for (Station route : routeForDuration) {
 //            System.out.println(route);
@@ -84,9 +93,9 @@ public class Proba {
         routeCalculator.getShortestRoute(station_1__1, station_1__3);
 
         //Вывод продолжительности маршрута
-        System.out.println("Получить длительность маршрута на одной линии: " + calculateDuration(arrayListRoute));
 
-//        System.out.println(routeForDuration);
+
+        System.out.println(calculateDuration(arrayListRoute));
 
 //        Proba proba = new Proba();
 //        proba.probaGetRouteOnTheLine();
@@ -100,7 +109,7 @@ public class Proba {
             Station station = route.get(i);
             if(i > 0) {
                 duration += previousStation.getLine().equals(station.getLine()) ?
-                        2.5 : 3.5;
+                        2 : 3;
             }
             previousStation = station;
         }
