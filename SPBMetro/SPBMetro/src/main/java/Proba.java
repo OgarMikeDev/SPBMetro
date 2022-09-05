@@ -84,7 +84,7 @@ public class Proba {
         routeCalculator.getShortestRoute(station_1__1, station_1__3);
 
         //Вывод продолжительности маршрута
-        System.out.println(calculateDuration(arrayListRoute));
+        System.out.println("Получить длительность маршрута на одной линии: " + calculateDuration(arrayListRoute));
 
 //        System.out.println(routeForDuration);
 
