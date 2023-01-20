@@ -7,7 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SPBMetro" />
+        <module name="SPBmetro()" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="SPBmetro()" target="9" />
+    </bytecodeTargetLevel>
   </component>
 </project>

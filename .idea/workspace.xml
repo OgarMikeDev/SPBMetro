@@ -1,7 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2dbe96ba-9a24-43c9-a192-41a64b3fd67f" name="Changes" comment="" />
+    <list default="true" id="2dbe96ba-9a24-43c9-a192-41a64b3fd67f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/.idea/SPBMetro.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/.idea/libraries/Maven__com_thoughtworks_qdox_qdox_2_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/.idea/libraries/Maven__org_apache_log4j_log4j_api_2_11_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_11_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/.idea/libraries/Maven__org_apache_maven_plugins_maven_compiler_plugin_3_10_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/.idea/libraries/Maven__org_apache_maven_shared_maven_shared_incremental_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/.idea/libraries/Maven__org_apache_maven_shared_maven_shared_utils_3_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/.idea/libraries/Maven__org_codehaus_plexus_plexus_compiler_api_2_11_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/.idea/libraries/Maven__org_codehaus_plexus_plexus_compiler_javac_2_11_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/.idea/libraries/Maven__org_codehaus_plexus_plexus_compiler_manager_2_11_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/.idea/libraries/Maven__org_codehaus_plexus_plexus_component_annotations_1_5_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/.idea/libraries/Maven__org_codehaus_plexus_plexus_java_1_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/.idea/libraries/Maven__org_codehaus_plexus_plexus_utils_3_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/.idea/libraries/Maven__org_ow2_asm_asm_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/SPBMetro.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/logs/search.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/spb-metro.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/src/main/java/Proba.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/src/main/java/RouteCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/src/main/java/StationIndex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/src/main/java/core/Line.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/src/main/java/core/Station.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/src/main/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/src/main/resources/map.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/src/test/java/RouteCalculatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/target/classes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/target/classes/Proba.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/target/classes/RouteCalculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/target/classes/StationIndex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/target/classes/core/Line.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/target/classes/core/Station.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/target/classes/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/target/classes/map.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/target/spb-metro-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/target/surefire-reports/RouteCalculatorTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/target/surefire-reports/TEST-RouteCalculatorTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/SPBMetro/target/test-classes/RouteCalculatorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/__MACOSX/SPBMetro/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPBMetro/logs/search.log" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +83,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2DLH7Wn8kgyBpv5kEFQTAj9rGAW" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -22,9 +99,23 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/SPBmetro/SPBMetro/SPBMetro"
+    "last_opened_file_path": "C:/spbmetro"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="SPBmetro()" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
